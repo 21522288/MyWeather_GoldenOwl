@@ -1,38 +1,191 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,body {
+  background-color: #E0ECF8;
+  margin: 0;
+}
+.header {
+  background-color: #3C76D2;
+  padding-top: 13px ;
+  padding-bottom: 13px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #fff;
+}
+.container {
+  max-width:1170x;
+  width: 100%;
+  margin-top: 30px;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.col-9 {
+  flex:0 0 75%;
+  max-width: 75%;
+}
+.col-3 {
+  flex:0 0 25%;
+  max-width: 25%;
+}
+.search-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 30px;
+}
+
+
+.city-input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #3C76D2;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+
+.search-btn, .location-btn {
+  background-color: #3C76D2;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.normalText_black{
+  color: black;
+}
+.location-btn{
+  background-color: #555555;
 }
 
-.App-link {
-  color: #61dafb;
+.search-btn:hover, .location-btn:hover, .more-btn:hover {
+  background-color: #29589A;
+}
+.right_container{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 30px;
+  margin: auto;
+  h2{
+    font-weight: 600;
+  }
+}
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3C76D2;
+  padding: 20px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  p{
+    height: 30px;
+    font-size: 18px;
+  }
+  h2{
+    color: #fff;
+    height: 30px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-details {
+  color: #555;
 }
+.weather-icon{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  img {
+    width: 110px;
+    height: 110px;
+  } 
+}
+.forecast_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 10px; 
+    padding: 10px 0px;
+}
+.forecast-card{
+  background-color:#555555;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.line_or{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.line{
+  height: 1px;
+  background-color: #999999;
+  width: 43%;
+}
+p{
+  color:#fff;
+}
+.more-btn{
+  background-color: #3C76D2;
+  color: #fff;
+  align-self:flex-end;
+  border: none;
+  padding: 5px 7px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn-container{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+.short-btn{
+  background-color: #3C76D2;
+  color: #fff;
+  border: none;
+  padding: 5px 7px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.verify-container {
+  padding: 30px;
+  text-align: center;
+}
+.time {
+  margin-top: 10px;
+  justify-content: center;
+  display: flex;
+}
+
+.code-inputs {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.code-input {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  font-size: 24px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.code-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
