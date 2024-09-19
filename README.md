@@ -12,4 +12,5 @@
  - Run client side: npm start
 * Giao diện 
 ![Screenshot 2024-09-19 003146](https://github.com/user-attachments/assets/fbb3ab8f-3e26-4407-a16d-d9eddb7b6337)
+* Link demo: https://drive.google.com/file/d/1jgVW_-NpUkSNFi6NWKnAUAnXTOd1y239/view?usp=sharing
 
