@@ -34,6 +34,7 @@ const App = () => {
         if (register) {
           alert("You already register success!");
           setVisible(false);
+          setCode(new Array(6).fill(""))
           const res = await axios.get(
             "https://ipinfo.io/json?token=a7ffc5e3b37e0b"
           );
@@ -104,9 +105,9 @@ const App = () => {
     try {
       setCity(cityInput);
       const deviceId = localStorage.getItem("deviceId");
-      const response_current = await Api.getCurrentWeather(city, deviceId);
+      const response_current = await Api.getCurrentWeather(cityInput, deviceId);
       setCurrent(response_current);
-      const response_forecast = await Api.getForecastWeather(city, 4, deviceId);
+      const response_forecast = await Api.getForecastWeather(cityInput, 4, deviceId);
       setWeatherList(response_forecast);
       setError(null);
     } catch (err) {
